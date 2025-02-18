@@ -1,6 +1,6 @@
 # **Fraud Detection in Bookings**  
 
-In this project, we developed a fraud detection model to predict whether a booking is fraudulent or legitimate. Our objective was to design a system that could accurately detect fraudulent transactions using historical booking data. Below is a step-by-step breakdown of our approach:  
+In this project, I developed a fraud detection model to predict whether a booking is fraudulent or legitimate. Our objective was to design a system that could accurately detect fraudulent transactions using historical booking data. Below is a step-by-step breakdown of our approach:  
 
 ### **1. Data Preprocessing**  
 - Cleaned the dataset by handling missing values and ensuring variables were in the correct format.  
@@ -11,11 +11,12 @@ In this project, we developed a fraud detection model to predict whether a booki
 - These engineered features helped in identifying patterns that indicate fraudulent behavior.  
 
 ### **3. Handling Class Imbalance**  
-- Fraudulent bookings were significantly fewer than legitimate ones.  
-- To address this imbalance, we applied **SMOTE (Synthetic Minority Over-sampling Technique)** to generate synthetic instances of fraudulent bookings, ensuring the model learned to detect fraud without bias.  
+- Fraudulent bookings were significantly fewer than legitimate ones.
+- Standardizing our data using StandardScaler before applying SMOTE ensures accurate and consistent distance calculations. 
+- To address this imbalance, i applied **SMOTE (Synthetic Minority Over-sampling Technique)** to generate synthetic instances of fraudulent bookings, ensuring the model learned to detect fraud without bias.  
 
 ### **4. Feature Selection (Random Forest)**  
-- Used **Random Forest** to determine feature importance, helping us identify the most predictive variables.  
+- Used **Random Forest** to determine feature importance, helping to identify the most predictive variables.  
 - Key fraud indicators included high-value bookings, bookings made with temporary email addresses, and irregular booking behaviors.  
 
 ### **5. Model Training (XGBoost)**  
@@ -34,8 +35,8 @@ The model provided critical insights into fraud trends, revealing patterns that 
 
 
 ### **8. Interactive Confusion Matrix**  
-To visualize model performance, we created an **interactive confusion matrix** using Plotly,
-his visualization helps us analyze **true positives, false positives, and false negatives**, making it easier to interpret our model’s predictions.  
+To visualize model performance, i created an **interactive confusion matrix** using Plotly,
+visualization helps analyze **true positives, false positives, and false negatives**, making it easier to interpret our model’s predictions.  
 
 ### **Conclusion**  
-By following this structured approach, we successfully built a **highly effective fraud detection model** that not only predicts fraudulent bookings accurately but also provides valuable insights into fraudulent behaviors. The combination of **Random Forest for feature selection and XGBoost for classification** allowed us to develop a **robust fraud detection system**, helping businesses minimize financial losses and improve security.  
+By following this structured approach, i successfully built a **highly effective fraud detection model** that not only predicts fraudulent bookings accurately but also provides valuable insights into fraudulent behaviors. The combination of **Random Forest for feature selection and XGBoost for classification** allowed to develop a **robust fraud detection system**, helping businesses minimize financial losses and improve security.  
