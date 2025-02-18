@@ -1,0 +1,8 @@
+pandas → Data manipulation
+numpy → Numerical operations
+matplotlib → Data visualization
+seaborn → Statistical plotting
+scipy → Statistical tests (e.g., Chi-Square test)
+xgboost → XGBoost machine learning model
+scikit-learn → Machine learning models, StandardScaler, and preprocessing tools
+imbalanced-learn → Provides SMOTE for oversampling minority classes in imbalanced datasets
