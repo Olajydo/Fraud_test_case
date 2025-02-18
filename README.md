@@ -1,4 +1,4 @@
-# **Fraud Detection in Hotel Bookings**  
+# **Fraud Detection in Bookings**  
 
 In this project, we developed a fraud detection model to predict whether a booking is fraudulent or legitimate. Our objective was to design a system that could accurately detect fraudulent transactions using historical booking data. Below is a step-by-step breakdown of our approach:  
 
